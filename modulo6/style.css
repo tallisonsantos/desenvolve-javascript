@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #5c67f2;
+    margin-bottom: 25px;
+}
+
+.input-area {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#nova-tarefa-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+#adicionar-tarefa-btn {
+    background-color: #5c67f2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#adicionar-tarefa-btn:hover {
+    background-color: #4a54e5;
+}
+
+#lista-de-tarefas {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-de-tarefas li {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s;
+}
+
+#lista-de-tarefas li:last-child {
+    border-bottom: none;
+}
+
+#lista-de-tarefas li input[type="checkbox"] {
+    margin-right: 15px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+}
+
+#lista-de-tarefas li span {
+    flex-grow: 1;
+    font-size: 18px;
+    cursor: default;
+}
+
+.concluida {
+    background-color: #e0ffe0;
+    opacity: 0.7;
+}
+
+.concluida span {
+    text-decoration: line-through;
+    color: #888;
+    font-style: italic;
+}
