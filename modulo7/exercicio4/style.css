@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e9eff1;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+textarea {
+  resize: none;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  align-self: flex-end;
+  background-color: #1d9bf0;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0c7dc0;
+}
+
+main {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.postagem {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.cabecalho-postagem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.nome-usuario {
+  font-weight: bold;
+}
+
+.texto-postagem {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.imagem-gato {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.botao-curtir {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  color: #e0245e;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.botao-curtir:hover {
+  color: #c2185b;
+}
